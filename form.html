@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="form.html">Сложная форма</a></li>
+          <li><a href="thanks.html">Страница благодарности</a></li>
+        </ul>
+      </nav>
+      <img src="./ico/favicon.svg" alt="Logo" width="250px" />
+    </header>
+    <!--  -->
+    <form action="/thanks.html" method="POST">
+      <fieldset>
+        <legend>Сложная форма 1</legend>
+        <label for="text">Просто текст:</label>
+        <input
+          id="text"
+          name="text"
+          type="text"
+          placeholder="Здесь должен быть текст"
+        />
+        <br />
+        <label for="email">Введите email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          pattern="[^@]+@[^@]+\.[^@]+"
+          placeholder="Здесь EMAIL"
+          title="неверно введен email"
+        />
+        <br /><br />
+        <h4>Чекбоксы</h4>
+        <p>Выберите Несколько вариантов:</p>
+        <label><input name="group_chek[]" type="checkbox" />Вариант 1</label>
+        <label><input name="group_chek[]" type="checkbox" />Вариант 2</label>
+        <label><input name="group_chek[]" type="checkbox" />Вариант 3</label>
+      </fieldset>
+      <!--  -->
+      <fieldset>
+        <legend>Сложная форма 2</legend>
+        <label for="password">Введите password:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"
+          placeholder="Здесь должен быть текст"
+          title="Не соблюдены требования пароля"
+        />
+        <br />
+        <label for="tel">Введите telephone:</label>
+        <input
+          id="tel"
+          type="tel"
+          name="phone"
+          placeholder="+7 (909) 773-00-28"
+        />
+        <br /><br />
+        <h4>Радиобаттоны</h4>
+        <p>Выберите Вариант:</p>
+        <label><input type="radio" name="group" />Вариант 1</label>
+        <label><input type="radio" name="group" />Вариант 2</label>
+        <label><input type="radio" name="group" />Вариант 3</label>
+      </fieldset>
+      <!--  -->
+      <label
+        >Результат прогресса: <progress value="70" max="100"></progress
+      ></label>
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
