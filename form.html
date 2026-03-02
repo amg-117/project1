@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
     <title>Document</title>
   </head>
   <body>
@@ -18,10 +19,11 @@
     </header>
     <!--  -->
     <form action="/thanks.html" method="POST">
-      <fieldset>
+      <fieldset class="form_1">
         <legend>Сложная форма 1</legend>
         <label for="text">Просто текст:</label>
         <input
+          disabled
           id="text"
           name="text"
           type="text"
@@ -30,6 +32,7 @@
         <br />
         <label for="email">Введите email:</label>
         <input
+          required
           id="email"
           name="email"
           type="email"
@@ -38,7 +41,7 @@
           title="неверно введен email"
         />
         <br /><br />
-        <h4>Чекбоксы</h4>
+        <h4 class="ramka">Чекбоксы</h4>
         <p>Выберите Несколько вариантов:</p>
         <label><input name="group_chek[]" type="checkbox" />Вариант 1</label>
         <label><input name="group_chek[]" type="checkbox" />Вариант 2</label>
@@ -77,5 +80,9 @@
       ></label>
       <button type="submit">Отправить</button>
     </form>
+    <label class="custom-checkbox">
+      <input type="checkbox" class="hidden-checkbox" />
+      <span class="checkbox-text">Согласен с условиями</span>
+    </label>
   </body>
 </html>

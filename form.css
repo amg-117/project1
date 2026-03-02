@@ -1,0 +1,96 @@
+.form_1 {
+  input:valid {
+    background-color: rgb(115, 171, 115);
+  }
+  input:invalid {
+    background-color: rgb(199, 142, 142);
+  }
+  input:invalid:focus {
+    outline-color: red;
+  }
+  input:disabled {
+    opacity: 0.6;
+    background: #f5f5f5;
+    cursor: not-allowed;
+  }
+  input[type="checkbox"]:checked {
+    accent-color: green;
+  }
+}
+.ramka {
+  position: relative;
+  padding: 20px;
+}
+
+.ramka::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid gold;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ramka:hover::before {
+  opacity: 1;
+}
+/* КАСТОМНЫЙ ЧЕКБОКС */
+/* прячем стандартный чекбокс */
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* создаём свой */
+.checkbox-text {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+/* стили для отмеченного */
+.hidden-checkbox:checked + .checkbox-text::before {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+/* галочка */
+.hidden-checkbox:checked + .checkbox-text::after {
+  content: "✓";
+  position: absolute;
+  left: 4px;
+  top: -1px;
+  color: white;
+  font-size: 14px;
+}
+
+/* фокус для доступности */
+.hidden-checkbox:focus + .checkbox-text::before {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+/* disabled */
+.hidden-checkbox:disabled + .checkbox-text {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
