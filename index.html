@@ -3,36 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" href="./ico/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="./ico/favicon.svg" />
-<link rel="shortcut icon" href="./ico/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Personal_blog" />
-<link rel="manifest" href="./ico/site.webmanifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./ico/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./ico/favicon.svg" />
+    <link rel="shortcut icon" href="./ico/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./ico/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Personal_blog" />
+    <link rel="manifest" href="./ico/site.webmanifest.json" />
+    <link rel="stylesheet" href="index.css" />
     <title>Личный блог</title>
+
+    <!-- ШРИФТ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
+    <!-- ШАПКА -->
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav_list">
           <li><a href="index.html">Главная</a></li>
           <li><a href="form.html">Сложная форма</a></li>
           <li><a href="thanks.html">Страница благодарности</a></li>
-        </ol>
+        </ul>
       </nav>
-      <img src="./ico/favicon.svg" alt="Logo" width="250px">
+      <img src="./ico/maxresdefault.jpg" alt="Logo" width="250px" />
     </header>
-
+    <!-- ОСНОВНАЯ ЧАСТЬ -->
     <main>
-      <article>
+      <article class="article">
         <h1>Личный блог</h1>
         <time datetime="07.05.2023">07.05.2023</time>
         <p>Автор: Ахмедханов Магомед Ахмедханович</p>
-        <section>
+        <section class="article_1">
           <h2>Статья 1</h2>
-          <figure>
-            <img src="./ico/favicon.svg" alt="Logo" width="250px">
-            <p>11111111111 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, assumenda fugiat. Aut eum beatae quisquam explicabo expedita distinctio, velit fugiat quidem ut necessitatibus provident in? Fugit praesentium accusamus libero nemo.</p>
+          <div class="image_hourse"></div>
+          <figure class="figure">
+            <img src="./ico/maxresdefault.jpg" alt="Logo" width="250px" />
+            <p>
+              11111111111 Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Repellendus, assumenda fugiat. Aut eum beatae quisquam
+              explicabo expedita distinctio, velit fugiat quidem ut
+              necessitatibus provident in? Fugit praesentium accusamus libero
+              nemo.
+            </p>
             <blockquote>Суп посоли, коверх отряхни, Мухамед Али</blockquote>
             <ul>
               <li>Тег 1</li>
@@ -46,8 +72,14 @@
         <section>
           <h2>Статья 2</h2>
           <figure>
-            <img src="./ico/favicon.svg" alt="Logo" width="250px">
-            <p>222222222222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, assumenda fugiat. Aut eum beatae quisquam explicabo expedita distinctio, velit fugiat quidem ut necessitatibus provident in? Fugit praesentium accusamus libero nemo.</p>
+            <img src="./ico/maxresdefault.jpg" alt="Logo" width="250px" />
+            <p>
+              222222222222 Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Repellendus, assumenda fugiat. Aut eum beatae quisquam
+              explicabo expedita distinctio, velit fugiat quidem ut
+              necessitatibus provident in? Fugit praesentium accusamus libero
+              nemo.
+            </p>
             <blockquote>Суп посоли, коверх отряхни, Мухамед Али</blockquote>
             <ul>
               <li>Тег 1</li>
@@ -63,8 +95,13 @@
         <section>
           <h2>Боковая Статья</h2>
           <figure>
-            <img src="./ico/favicon.svg" alt="Logo" width="250px">
-            <p>ББББББ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, assumenda fugiat. Aut eum beatae quisquam explicabo expedita distinctio, velit fugiat quidem ut necessitatibus provident in? Fugit praesentium accusamus libero nemo.</p>
+            <img src="./ico/maxresdefault.jpg" alt="Logo" width="250px" />
+            <p>
+              ББББББ Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus, assumenda fugiat. Aut eum beatae quisquam explicabo
+              expedita distinctio, velit fugiat quidem ut necessitatibus
+              provident in? Fugit praesentium accusamus libero nemo.
+            </p>
             <blockquote>Суп посоли, коверх отряхни, Мухамед Али</blockquote>
             <ul>
               <li>Тег 1</li>
@@ -77,7 +114,7 @@
         </section>
       </aside>
     </main>
-
+    <!-- ПОДВАЛ -->
     <footer>
       <button>Подписаться на рассылку</button>
     </footer>

@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  background-color: gray;
+}
+
+.nav {
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 5px;
+    height: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.article {
+  h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+  }
+}
+
+.article_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  border: 3px black solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px goldenrod;
+}
+.image_hourse {
+  width: 200px;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 5px cornflowerblue;
+  background-image: url("hourse.jpg");
+  background-color: antiquewhite;
+  background-size: cover;
+}
+
+.figure {
+  p {
+    width: 300px;
+    border: 1px red solid;
+    font-size: 14px;
+    text-align: center;
+  }
+}
