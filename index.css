@@ -25,7 +25,27 @@
     color: black;
   }
 }
-
+/* FLEXBOX */
+.flex_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.flex_block {
+  height: 100px;
+  background-color: #d0ecc3;
+  border: 1px solid black;
+}
+.item {
+  flex: 2 2 300px;
+  background-color: aqua;
+}
+.item2 {
+  flex: 1 1 400px;
+  order: 1;
+  background-color: red;
+}
+/*  */
 .article {
   h1 {
     font-family: "Black Ops One", system-ui;
