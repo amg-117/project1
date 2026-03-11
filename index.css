@@ -1,6 +1,106 @@
 .card_container {
   display: flex;
   justify-content: center;
+  margin: 100px auto;
+  border: 1px solid black;
   width: 1316px;
   gap: 46px;
+}
+/* MAIN */
+.card_main {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+}
+.card_gallery {
+  margin: 0;
+  width: 100%;
+  img {
+    width: 75px;
+    height: 55px;
+  }
+  img:first-child {
+    width: 100%;
+    height: auto;
+  }
+}
+.card_main_info {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 10px 0;
+  }
+}
+.card_main_indo_haracteristics {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  p {
+    width: 250px;
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    span {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+/* PRICE */
+.card_price {
+  display: flex;
+  flex-direction: column;
+  width: 322px;
+  gap: 10px;
+  h2 {
+    font-size: 35px;
+  }
+}
+.button_number {
+  background-color: #02d15c;
+  width: 285px;
+  height: 68px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+  box-sizing: content-box;
+  span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+.button_message {
+  background-color: #0af;
+  width: 285px;
+  height: 68px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+  box-sizing: content-box;
+  span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+.button_subscribe {
+  border: none;
+  width: 295px;
+  height: 28px;
+  box-sizing: content-box;
+  padding: 1px 12px 3px 12px;
+  border-radius: 6px;
+  background-color: #ede9e1;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* ZERO */
+.card_zero {
+  width: 300px;
 }
